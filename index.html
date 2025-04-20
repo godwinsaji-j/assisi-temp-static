@@ -36,7 +36,9 @@ body {
     font-size: 0.88rem;
     user-select: none;
 }
-
+a{
+  color: white;
+}
 .text-pink{
     color: var(--color-pink)
 }
@@ -53,6 +55,9 @@ nav {
     background: #000;
     /* background: #0000003d; */
     color: #fefefe;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
 }
 .brand-name{
     font-family: roboto, sans-serif;
@@ -512,6 +517,8 @@ contact-button a{
           <nav-item><a href="#hero">Home</a></nav-item>
           <nav-item><a href="#about">About</a></nav-item>
           <nav-item><a href="#services">Services</a></nav-item>
+          <nav-item><a href="#contribute">Contribute</a></nav-item>
+          <nav-item><a href="#contact">Contact</a></nav-item>
         </nav-list>
       </div>
     </nav>
@@ -532,7 +539,7 @@ contact-button a{
         </quote>
         <button class="donate-button">
           <span class="material-symbols-outlined filled">favorite</span>
-          Contribute
+          <a href="#contribute">Contribute</a>
         </button>
       </h2>
     </section>
@@ -563,12 +570,12 @@ contact-button a{
             well-being for all individuals.
           </h3>
           <button class="rounded-button">
-            <span class="material-symbols-outlined">call</span> Contact Now
+            <span class="material-symbols-outlined">call</span> <a href="#contact">Contact Now</a>
           </button>
         </div>
       </div>
     </section>
-    <section>
+    <section style="display: none;">
       <section-header
         ><h3>
           <span class="material-symbols-outlined">thumb_up</span> You're In Good
@@ -760,7 +767,7 @@ contact-button a{
         </half-1>
       </section-body>
     </section>
-    <section class="contribution">
+    <section class="contribution" id="contribute">
       <section-header
         ><h3>
           <span class="material-symbols-outlined">favorite</span> Contribute
@@ -814,9 +821,9 @@ contact-button a{
         </half-2>
       </section-body>
     </section>
-    <footer>
+    <footer id="contact">
       <div class="half-1">
-        <h3 class="brand-name">Assisi Snehalaya</h3>
+        <h3 clatss="brand-name">Assisi Snehalaya</h3>
         <social-icons>
           <social-icon
             ><img src="images/facebook-logo.webp" alt="" srcset=""
@@ -830,8 +837,8 @@ contact-button a{
           <contact-button> | </contact-button>
           <contact-button>
             <span class="material-symbols-outlined">mail</span>
-            <a href="mailto:assisisnehalaya63@gmail.com"
-              >assisisnehalaya63@gmail.com</a
+            <a href="mailto:assisisnehalaya@yahoo.co.in"
+              >assisisnehalaya@yahoo.co.in</a
             >
           </contact-button>
         </contacts>
